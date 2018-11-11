@@ -63,47 +63,93 @@ a:hover {
 
 .game {
   margin: 25px 0; }
-  .game .servers {
-    margin: 50px 0;
+  .game .server {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .game .servers .server {
-      margin: 20px 0;
-      width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0;
+    width: 100%; }
+    .game .server .logo img {
+      display: block;
+      margin: 0 auto;
       height: 150px; }
-      .game .servers .server .logo img {
-        display: block;
-        margin: 0 auto;
-        height: 150px; }
-      .game .servers .server .options {
-        text-align: center; }
-        .game .servers .server .options h2 {
-          font-size: 1.5rem;
-          margin: 0;
-          height: 50px; }
-        .game .servers .server .options .select-type {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          height: 100px; }
-        .game .servers .server .options .button-type {
-          width: 100px;
-          height: 40px;
+    .game .server .options {
+      margin-top: 20px;
+      text-align: center; }
+      .game .server .options h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        height: 50px; }
+      .game .server .options .select-type {
+        margin-top: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 40px; }
+      .game .server .options .button-type {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: yellow;
+        border-radius: 20px;
+        margin: 0 20px;
+        font-weight: 700;
+        cursor: pointer; }
+        .game .server .options .button-type:hover {
+          text-decoration: underline; }
+      .game .server .options .form-order {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .game .server .options .form-order input, .game .server .options .form-order select {
+          font-size: 18px;
+          text-align-last: center;
           text-align: center;
-          line-height: 40px;
-          background: yellow;
-          border-radius: 20px;
-          margin: 0 20px;
-          font-weight: 700; }
+          font-family: 'Open Sans', sans-serif;
+          margin: 5px 0;
+          border: none;
+          border: solid 2px rgba(0, 0, 0, 0.12);
+          height: 50px;
+          width: 300px;
+          -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+          .game .server .options .form-order input:focus, .game .server .options .form-order select:focus {
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            border-color: #000; }
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: #000; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+  color: #000; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+  color: #000; }
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: #000; }
 
 .specials-full {
   width: 100%;
