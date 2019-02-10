@@ -1,5 +1,5 @@
 $(function () {
-	let stock = 1283;
+	let stock = 2411;
 	let wallet = {
 		BTC: '1PjHq8tR6UWg2UuiWw3Dy5czExCwSsbpvH',
 		ETH: '0x42AE84AdF83015Dc622E952EE273395745B6eBAd',
@@ -7,7 +7,7 @@ $(function () {
 		XMR: '43TmPNV4MrQDQMye7WrbrziLKM8fLay98Spc6AiAcjGTiJWDNEDZpfg5P4d12ZZ2GXFDP3Amz349witdMuAomspuF3VUps7',
 
 	};
-	let price = 0.25;
+	let price = 0.15;
 	let name, amount, server, cc, inusd, incc;
 	$('#amount').keypress((eventObject) => {
 		if (event.keyCode < 48 || event.keyCode > 57)
